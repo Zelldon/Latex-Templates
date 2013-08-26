@@ -1,0 +1,226 @@
+%=========================SETUP========================
+\documentclass[xcolor=dvipsnames]{beamer}
+\let\Tiny=\tiny
+\setbeamertemplate{navigation symbols}{}
+\title[T.]{Title}  
+%\subtitle[short version]{A subtitle}
+\author[Z.]{Zelldon}
+\institute[I.]{Institute}
+\date{\today} 
+\logo{\includegraphics[scale=.25]{logo.png}}
+
+\titlegraphic{\includegraphics[scale=.25]{Titlelogo.png}}
+
+%======================================================
+%
+%
+%=====================PACKAGES======================
+\usepackage{beamerthemeshadow}
+%\usepackage{beamerthemesidebar}
+\usepackage{hyperref}
+\usepackage[ngerman]{babel}
+\usepackage{listings} 
+%====================================================
+%
+%
+%===================STYLE=====================
+\usecolortheme[named=gray]{structure} 
+\usecolortheme{whale}
+%\usecolortheme{beetle}
+%\usecolortheme{sidebartab}
+\useoutertheme{infolines}
+
+\setbeamercovered{dynamic}
+
+
+
+\setbeamercolor{sidebar}{bg=gray, fg=black, parent=gray}
+\setbeamercolor{boxColor} {bg=Apricot, fg=black}
+\setbeamercolor{boxColor2}{bg=Peach, fg=black}
+
+%==============================================================================
+%																		Listings
+%==============================================================================
+\definecolor{javared}{rgb}{0.6,0,0} % for strings
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
+\definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
+\definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
+
+\RequirePackage{listings} 
+		%==========================================================
+		%														DEFAULT - JAVA
+		%==========================================================
+		
+		\lstset{language=Java} 
+		\lstset{keywordstyle=\color{javapurple}\ttfamily}%\bfseries} 
+		\lstset{breaklines=true} 
+		\lstset{basicstyle=\tiny\ttfamily}%\ttfamily\fontsize{10}{10}} 
+		\lstset{xleftmargin=10px}
+		\lstset{tabsize=2}
+		\lstset{frameround=ffff}
+		\lstset{frame=single}
+		\lstset{framerule=1pt}
+		\lstset{backgroundcolor=\color{background}}
+		\lstset{numbers=right}
+		\lstset{numberstyle=\tiny}
+		\lstset{showstringspaces=false}
+		\lstset{stringstyle=\color{javared}}
+		\lstset{commentstyle=\color{javagreen}}
+		\lstset{morecomment=[s][\color{javadocblue}]{/**}{*/}}
+		%==========================================================
+		%																		JSON
+		%==========================================================
+		
+		\colorlet{punct}{red!60!black}
+		\definecolor{background}{HTML}{EEEEEE}
+		\definecolor{delim}{RGB}{20,105,176}
+		\colorlet{numb}{magenta!60!black}
+		
+		\lstdefinelanguage{json}{
+		    backgroundcolor=\color{background},
+		    literate=
+		     *{0}{{{\color{numb}0}}}{1}
+		      {1}{{{\color{numb}1}}}{1}
+		      {2}{{{\color{numb}2}}}{1}
+		      {3}{{{\color{numb}3}}}{1}
+		      {4}{{{\color{numb}4}}}{1}
+		      {5}{{{\color{numb}5}}}{1}
+		      {6}{{{\color{numb}6}}}{1}
+		      {7}{{{\color{numb}7}}}{1}
+		      {8}{{{\color{numb}8}}}{1}
+		      {9}{{{\color{numb}9}}}{1}
+		      {:}{{{\color{javared}{:}}}}{1}
+		      {,}{{{\color{javared}{,}}}}{1}
+		      {\{}{{{\color{javared}{\{}}}}{1}
+		      {\}}{{{\color{javared}{\}}}}}{1}
+		      {[}{{{\color{javared}{[}}}}{1}
+		      {]}{{{\color{javared}{]}}}}{1}
+		}
+		
+		
+		\lstdefinelanguage{properties}{
+		    backgroundcolor=\color{background},
+		    morecomment=[l]{\#},
+		    basicstyle=\tiny\ttfamily\color{javared},
+			numberstyle=\tiny\color{black},
+		    rulecolor=\color{black},
+		    morecomment=[l][\color{black}]{=},
+		    literate=
+		     *{0}{{{\color{numb}0}}}{1}
+		      {1}{{{\color{numb}1}}}{1}
+		      {2}{{{\color{numb}2}}}{1}
+		      {3}{{{\color{numb}3}}}{1}
+		      {4}{{{\color{numb}4}}}{1}
+		      {5}{{{\color{numb}5}}}{1}
+		      {6}{{{\color{numb}6}}}{1}
+		      {7}{{{\color{numb}7}}}{1}
+		      {8}{{{\color{numb}8}}}{1}
+		      {9}{{{\color{numb}9}}}{1}
+		      {.}{{{\color{javared}{.}}}}{1}
+		      {,}{{{\color{javared}{,}}}}{1}
+		      %{=}{{{\color{javared}{=}}}}{1}
+		}
+		
+		\lstdefinelanguage{header}{
+		    backgroundcolor=\color{background},
+		    basicstyle=\tiny\ttfamily\color{javared},
+			numberstyle=\tiny\color{black},
+		    rulecolor=\color{black},
+		    morecomment=[l][\color{black}]{:},
+		    literate=
+		     *{0}{{{\color{numb}0}}}{1}
+		      {1}{{{\color{numb}1}}}{1}
+		      {2}{{{\color{numb}2}}}{1}
+		      {3}{{{\color{numb}3}}}{1}
+		      {4}{{{\color{numb}4}}}{1}
+		      {5}{{{\color{numb}5}}}{1}
+		      {6}{{{\color{numb}6}}}{1}
+		      {7}{{{\color{numb}7}}}{1}
+		      {8}{{{\color{numb}8}}}{1}
+		      {9}{{{\color{numb}9}}}{1}
+		      {.}{{{\color{javared}{.}}}}{1}
+		      {,}{{{\color{javared}{,}}}}{1}
+		      %{=}{{{\color{javared}{=}}}}{1}
+		}
+
+\renewcommand{\lstlistingname}{Beispiel} 
+\renewcommand{\lstlistlistingname}{Beispielverzeichnis}
+%=============================================
+
+\begin{document}
+%==================================TITLEPAGE============================
+\begin{frame}
+	\titlepage
+\end{frame}
+
+
+%==================================GLIEDERUNG============================
+
+\begin{frame}
+	\frametitle{Gliederung}
+	\tableofcontents
+\end{frame} 
+
+%==================================Aufgabenstellung============================
+
+\section{Abschnitt - 1} 
+	\begin{frame}{Rounded box}
+%		\frametitle{Abschnitt - 1}
+		\begin{beamerboxesrounded}[lower=boxColor, upper=boxColor2, shadow=true]{A Title}
+			TEXT text Text.
+		\end{beamerboxesrounded}
+		
+	\end{frame}
+
+%==================================Aufbau der Arbeit============================
+
+\section{Abschnitt - 2} 
+	\subsection{Abschnitt - 2.1}
+		\begin{frame}
+			\frametitle{Itemize - Liste}
+			\begin{itemize}[<+->]
+				\item Item
+				\item Item
+				\item Item
+			\end{itemize}
+		\end{frame}
+	\subsection{Abschnitt - 2.2}
+		\begin{frame}
+			\frametitle{Enumerate - Liste}
+			\begin{enumerate}
+				\item<1-> Item
+				\item<3> Item
+				\item<2-> Item
+			\end{enumerate}
+		\end{frame}
+	\subsection{Abschnitt - 2.2}
+		\begin{frame}
+			\frametitle{Description - Liste}
+			\begin{description}
+				\item[$\star$] Item
+				\item[$\star$] Item
+				\item[$\star$] Item
+			\end{description}
+		\end{frame}
+
+%==================================VORFUEHRUNG============================
+
+\section{Vorf\"uhrung}
+	\begin{frame}
+	  \frametitle{Vorf\"uhrung}
+	  ...
+	\end{frame}
+
+%==================================APNS-Quellen============================
+
+\section{Quellen}
+  \begin{frame}
+    \frametitle{Quellen}
+    
+    \begin{thebibliography}{} 
+      \bibitem{ITEM}\href{http://www.google.com/}
+      {ITEM}
+    \end{thebibliography} 
+  \end{frame}
+
+\end{document}
