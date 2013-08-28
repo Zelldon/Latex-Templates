@@ -1,0 +1,15 @@
+{
+    "id": 213,
+    "title": "Cafeteria TU Marchstrasse",
+    "canteens": "http://localhost:8080/v2/canteens",
+    "createPoll": {
+        "@type": "pollOperation",
+        "uri": "http://localhost:8080/v2/%7Buuid%7D/polls",
+        "method": "post",
+        "type": "application/json",
+        "parameter": { "member": [{"contact": "TELE-HASH"}],
+            "time": "UNIX-TIMESTAMP","options": [{
+                    "option": "CANTEEN","rating": "(1-10)"}]}
+    }
+    //CANTEEN Information
+}

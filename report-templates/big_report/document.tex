@@ -1,0 +1,237 @@
+\documentclass{documentclass}
+\RequirePackage{documentpackage}
+\usepackage{blindtext}
+%========================================================
+%====================GLOSSARIES============================
+%========================================================
+
+%========================================================
+%======================ABKZ-VZ============================
+%========================================================
+
+%\newacronym{<label>}{<abbrv>}{<full>}
+
+\newacronym{usw}{usw.}{und so weiter}
+\newacronym{vgl}{vgl.}{vergleiche}
+\newacronym{ebd}{ebd.}{ebenda}
+\newacronym{bzw}{bzw.}{beziehungsweise}
+\newacronym{engl}{engl.}{englisch}
+\newacronym{z.B.}{z.B.}{zum Beispiel}
+\newacronym{d.h.}{d.h.}{das hei\ss t}
+\newacronym{u.a.}{u.a.}{und andere}
+%========================================================
+%=======================GLOSSAR============================
+%========================================================
+
+
+\newglossaryentry{ls}
+{
+  name=\textit{layered system},
+  plural= \textit{layered systems},
+  description={Ein System das in Schichten eingeteilt ist.
+  					  Die untersten Schichten stellen Funktionalit\"aten f\"ur die
+  						oberen bzw. \"au\ss ersten Schichten bereit (\cite[vgl.][46]{phd:REST}).}
+}
+
+\newglossaryentry{cache}
+{
+  name=\textit{cache},
+  description={Ein \textit{cache} erm\"oglicht das Zwischenspeichern von Informationen f\"ur die Wiederbenutzung (\cite[vgl.][48]{phd:REST}).}
+}
+
+\newglossaryentry{RESTful}
+{
+  name=\textit{RESTful},
+  description={Sind alle REST Bedingungen erf"ullt spricht man von RESTful. Siehe zur Erkl\"arung Abschnitt \ref{sec:rest}.}
+}
+
+\newglossaryentry{frame}
+{
+  name=\textit{framework},
+  plural= \textit{frameworks},
+  description={Englisch f\"ur Rahmen oder Ger\"ust. Wird in dieser Arbeit benutzt um ein Softwareger\"ust zu bezeichnen das 
+  						verwendet wird um Software unter bestimmten Aspekten zu entwickeln.
+  						Ein framework stellt meist bestimmte Schnittstellen, Architekturmerkmale und Funktionalit\"aten bereit.}
+}
+
+\newglossaryentry{ex}
+{
+  name=\textit{Exception},
+  plural=\textit{Exceptions},
+  description={Englisch f\"ur Ausnahme oder Ausnahmefall,
+  						wird in dieser Arbeit im Zusammenhang mit der Programmiersprache Java verwendet.
+  						Java Exceptions beschreiben einen Ausnahme- oder Fehlerfall innerhalb eines Java Programmes.}
+}
+
+\newglossaryentry{overhead}
+{
+  name=\textit{overhead},
+  description={Englisch f\"ur Aufwand oder Mehraufwand,
+  						wird in dieser Arbeit zur Beschreibung des Mehraufwands bzw. Mehraufwand von Ressourcenkosten verwendet.
+  						Ressourcenkosten k\"onnen Bandbreite oder Latenz  bei der \"Ubertragung von Nachrichten sein.}
+}
+
+
+\newglossaryentry{head}
+{
+  name=\textit{Header},
+  plural=\textit{Headers},
+  description={Englisch f\"ur Kopfzeile,
+  						wird in dieser Arbeit im Zusammenhang von HTTP benutzt.
+  						Bei den HTTP-Headers unterscheidet man zwischen Anfrage- und Antwort-Header.
+  						Die HTTP-Header gelten als Sticker auf dem HTTP-Envelope, der zwischen Client und Server versendet wird.
+  						Die Header gelten als Metadaten und bestehen aus key-value Paaren (\cite[vgl.][6]{Book:REST}).}
+}
+
+
+\newglossaryentry{eb}
+{
+  name=\textit{entity body},
+  plural=\textit{entity bodies},
+  description={ Dieser Begriff wird in dieser Arbeit im Zusammenhang von HTTP benutzt.
+  						Entity body steht f\"ur das Dokument oder Repr\"asentation innerhalb des HTTP-Evenlope (\cite[vgl.][6]{Book:REST}).}
+}
+
+\newglossaryentry{env}
+{
+  name=\textit{Envelope},
+  plural=\textit{Envelopes},
+  description={Englisch f\"ur Umschlag oder H\"ulle, wird in dieser Arbeit im Zusammenhang von HTTP benutzt.
+  						Der HTTP-Envelope oder Umschlag ist das was von einem Client zum Server gesendet wird und zur\"uck.
+  						 Innerhalb dieses Umschlages befindet sich ein entity body oder auch Repr\"asentation die dabei \"ubertragen wird
+  						 (\cite[vgl.][5]{Book:REST}).}
+}
+
+
+\newglossaryentry{descr}
+{
+  name=\textit{Deskriptor},
+  plural=\textit{Deskriptor},
+  description={Englisch f\"ur Beschreiber, wird in dieser Arbeit im Zusammenhang vom Deployment und web.xml benutzt.
+  						Der Deskriptor oder Deployment-Deskriptor bezeichnet etwas, was den Entwicklungsprozess bzw. die Aufstellung
+  						eines Webservices beschreibt.}
+}
+
+
+\newglossaryentry{mar}
+{
+  name=\textit{marshaller},
+  description={Englisch f\"ur Einweiser, wird in dieser Arbeit im Zusammenhang mit der Programmiersprache Java und der
+  						 JAXB Spezifikation verwendet.
+  						 Der marshaller erm\"oglicht es die Daten/Informationen aus einem Java-Objekt in ein XML oder JSON Format 		
+  						 zu konvertieren. Dieses Vorgehen wird als marshalling bezeichnet.}
+}
+
+
+\newglossaryentry{unmar}
+{
+  name=\textit{unmarshaller},
+  description={Dieser Begriff wird in dieser Arbeit im Zusammenhang mit der Programmiersprache Java und der
+  						 JAXB Spezifikation verwendet. Der unmarshaller erm\"oglicht die Umkehroperation des marshallings,
+  						 bezeichnet als das unmarshalling.
+  						 Er konvertiert die Daten aus dem XML oder JSON Format zur\"uck in ein Java-Objekt.}
+}
+
+
+\newglossaryentry{pfile}
+{
+  name=\textit{property file},
+  description={Property englisch f\"ur Eigenschaft. 
+  						Der Begriff property file wird in dieser Arbeit im Zusammenhang mit der Programmiersprache Java verwendet.
+  						Das property file hat normalerweise die Endung ''properties''.
+  						Innerhalb dieses file werden Eigenschaften bzw. Informationen, als key-value Paare, gespeichert. Diese Informationen
+  						k\"onnen das Verhalten des zugeh\"origen Java Programms beeinflussen.}
+}
+
+\newglossaryentry{kv}
+{
+  name=\textit{key-value},
+  description={Key englisch f\"ur Schl\"ussel und value englisch f\"ur Wert beschreiben ein Schl\"ussel-Wert Paar.
+  						Der Schl\"ussel erm\"oglicht es den Wert eindeutig zu identifizieren.
+  						Solche key-value Paare werden z.B. im JSON und Form-Encoded Format oder innerhalb eines property files verwendet.
+  						Der Schl\"ussel und der dazugeh\"orige Wert wird meist mit einem Zeichen getrennt.
+  						Das Zeichen kann z.B. $=$, $:$ oder anderes sein.}
+}
+
+\newglossaryentry{entity}
+{
+  name=\textit{entity},
+  plural= \textit{entities},
+  description={Englisch f\"ur Etwas oder einen Gegenstand, wird in dieser Arbeit im Zusammenhang mit der Programmiersprache Java 
+  						und ORM verwendet.
+  						Entity beschreibt in dieser Arbeit eine Klasse oder ein Objekt, das einen Eintrag aus einer Tabelle einer Datenbank repr\"asentiert.
+  						Z.B. die Entity-Klasse User repr\"asentiert einen Eintrag aus der User-Tabelle.}
+}
+%========================================================
+%===================BACHELOR-ARBEIT===================
+%========================================================
+\begin{document}
+%========================================================
+%========================TITLEPAGE==========================
+%========================================================
+\tpage
+%========================================================
+%========================DANKSAGUNG========================
+%========================================================
+\dank
+\pagestyle{headings} % ermoeglicht das ausgeben von kapiteln als header
+\pagenumbering{roman}
+
+%========================================================
+%========================TOC=============================
+%========================================================
+\tableofcontents
+\cleardoublepage
+%========================================================
+%=========================FIGURES==========================
+%========================================================
+%optional for hyperref:
+\phantomsection
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+\listoffigures 
+\cleardoublepage
+%========================================================
+%=========================TABLES===========================
+%========================================================
+%optional for hyperref:
+\phantomsection
+\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
+\listoftables
+\cleardoublepage
+%========================================================
+%=========================EXAMPLES=========================
+%========================================================
+%optional for hyperref:
+\phantomsection
+\addcontentsline{toc}{chapter}{Beispielverzeichnis}
+\lstlistoflistings
+\cleardoublepage
+\newpage
+%========================================================
+%==========================CONTENT========================
+%========================================================
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+\blinddocument
+\input{Content/chp1}
+\input{Content/chp2}
+
+\glsaddall
+\printglossary[type=acronym,title=Abk\"urzungsverzeichnis,toctitle=Abk\"urzungsverzeichnis] 
+\printglossary
+
+\setcounter{chapter}{0}
+\printbibliography[heading=bibintoc]
+\cleardoublepage
+\newpage
+\setcounter{page}{1}
+%\pagestyle{plain} % ermoeglicht das loeschen des headers
+\pagenumbering{Alph}
+\input{Anhang/appendix.tex}
+
+%========================================================
+%========================ERKLAERUNG========================
+%========================================================
+\erklaerung
+\end{document}

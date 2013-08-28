@@ -1,0 +1,54 @@
+\chapter{Anderes Kapitel}
+	\section{Abbildung}
+        \begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.5]{Content/Logo}
+			\caption{Logo}
+			\label{fig:logo}
+		\end{figure} \noindent
+	\section{Tabelle}
+		\begin{table}[H]
+			\begin{tabular}{| p{3cm} | p{3cm} | p{3cm} | p{5cm} |}
+			\hline
+			\textbf{Header} 				&		\textbf{Header}				&			\textbf{Header}		&		\textbf{Langer Header}			
+			\\ \hline
+			Test									&			Test								&			Test							&		Test		
+			\\ \hdashline
+			\dots								&			\dots							&			\dots						&			\dots
+			\\ \hline
+			\dots								&			\dots							&			\dots						&			\dots
+			\\ \hline
+			\end{tabular}
+			\caption{Tabelle}
+		\end{table}
+	\section{Beispiel}
+		\subsection{Java}
+			\lstinputlisting[language=java,
+						numbers=left,
+	                 	caption={Java file},
+	                 	captionpos=b,
+	                 	label=list:java-file]
+	                 	{Content/test.java}
+		\subsection{Json}
+			\lstinputlisting[language=json,
+						numbers=left,
+	                 	caption={JSON file},
+	                 	captionpos=b,
+	                 	label=list:json-file]
+	                 	{Content/test.json}
+		\subsection{Property}
+			\lstinputlisting[language=properties,
+						numbers=left,
+	                 	caption={Property file},
+	                 	captionpos=b,
+	                 	label=list:property-file]
+	                 	{Content/test.properties}
+		\subsection{Header}
+			\lstinputlisting[language=header,
+						numbers=left,
+	                 	caption={Headers},
+	                 	captionpos=b,
+	                 	firstline=3,
+	                 	lastline=9,
+	                 	label=list:headers]
+	                 	{Content/responses.txt}

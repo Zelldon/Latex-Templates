@@ -1,0 +1,15 @@
+#canteens response without If-None-Match Header
+
+Status Code: 200
+Date: Wed, 17 Jul 2013 21:56:56 GMT
+Server: Apache-Coyote/1.1
+ETag: "463b8962264542f17b4c49f95db55941"
+Content-Length: 4676
+Content-Type: application/json
+
+#canteens response without If-None-Match Header
+
+Status Code: 304
+Date: Wed, 17 Jul 2013 22:06:50 GMT
+ETag: "463b8962264542f17b4c49f95db55941"
+Server: Apache-Coyote/1.1
