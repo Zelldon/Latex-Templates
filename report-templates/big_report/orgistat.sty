@@ -1,0 +1,20 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{orgistat}[2015/04/02 Package for the thesis statement of originality]
+
+\newcommand{\orgistatement}[1]{
+			\cleardoublepage
+			\newpage
+			\setcounter{page}{0}
+			\pagestyle{empty}
+			\vspace*{5cm}
+			\begin{center}
+			
+				Hiermit versichere ich, dass ich die vorliegende #1 selbstst\"andig und nur unter
+				Verwendung der angegebenen Quellen und Hilfsmittel verfasst habe. Die Arbeit wurde bisher
+				in gleicher oder \"ahnlicher Form keiner anderen Pr\"ufungsbeh\"orde vorgelegt.
+			\end{center}
+			\vspace{3cm}
+			\rule{\widthof{\textbf{Ort, Datum}}}{1pt} \hfill \rule{\widthof{\textbf{Name}}}{1pt}
+			\\
+			\textbf{Ort, Datum} \hfill \textbf{Name}
+	}		

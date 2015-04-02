@@ -1,0 +1,116 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{ownlistings}[2015/04/02 the own listing package which creates for some languages
+                              a highlightin and box style]
+%==============================================================================
+%																		Listings
+%==============================================================================
+\definecolor{javared}{rgb}{0.6,0,0} % for strings
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
+\definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
+\definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
+
+\RequirePackage{listings} 
+		%==========================================================
+		%														DEFAULT - JAVA
+		%==========================================================
+		
+		\lstset{language=Java} 
+		\lstset{keywordstyle=\color{javapurple}\ttfamily}%\bfseries} 
+		\lstset{breaklines=true} 
+		\lstset{basicstyle=\tiny\ttfamily}%\ttfamily\fontsize{10}{10}} 
+		\lstset{xleftmargin=10px}
+		\lstset{tabsize=2}
+		\lstset{frameround=ffff}
+		\lstset{frame=single}
+		\lstset{framerule=1pt}
+		\lstset{backgroundcolor=\color{background}}
+		\lstset{numbers=right}
+		\lstset{numberstyle=\tiny}
+		\lstset{showstringspaces=false}
+		\lstset{stringstyle=\color{javared}}
+		\lstset{commentstyle=\color{javagreen}}
+		\lstset{morecomment=[s][\color{javadocblue}]{/**}{*/}}
+		%==========================================================
+		%																		JSON
+		%==========================================================
+		
+		\colorlet{punct}{red!60!black}
+		\definecolor{background}{HTML}{EEEEEE}
+		\definecolor{delim}{RGB}{20,105,176}
+		\colorlet{numb}{magenta!60!black}
+		
+		\lstdefinelanguage{json}{
+		    backgroundcolor=\color{background},
+		    literate=
+		     *{0}{{{\color{numb}0}}}{1}
+		      {1}{{{\color{numb}1}}}{1}
+		      {2}{{{\color{numb}2}}}{1}
+		      {3}{{{\color{numb}3}}}{1}
+		      {4}{{{\color{numb}4}}}{1}
+		      {5}{{{\color{numb}5}}}{1}
+		      {6}{{{\color{numb}6}}}{1}
+		      {7}{{{\color{numb}7}}}{1}
+		      {8}{{{\color{numb}8}}}{1}
+		      {9}{{{\color{numb}9}}}{1}
+		      {:}{{{\color{javared}{:}}}}{1}
+		      {,}{{{\color{javared}{,}}}}{1}
+		      {\{}{{{\color{javared}{\{}}}}{1}
+		      {\}}{{{\color{javared}{\}}}}}{1}
+		      {[}{{{\color{javared}{[}}}}{1}
+		      {]}{{{\color{javared}{]}}}}{1}
+		}
+		
+		
+		%==========================================================
+		%																		PROPERTIES
+		%==========================================================
+		\lstdefinelanguage{properties}{
+		    backgroundcolor=\color{background},
+		    morecomment=[l]{\#},
+		    basicstyle=\tiny\ttfamily\color{javared},
+			numberstyle=\tiny\color{black},
+		    rulecolor=\color{black},
+		    morecomment=[l][\color{black}]{=},
+		    literate=
+		     *{0}{{{\color{numb}0}}}{1}
+		      {1}{{{\color{numb}1}}}{1}
+		      {2}{{{\color{numb}2}}}{1}
+		      {3}{{{\color{numb}3}}}{1}
+		      {4}{{{\color{numb}4}}}{1}
+		      {5}{{{\color{numb}5}}}{1}
+		      {6}{{{\color{numb}6}}}{1}
+		      {7}{{{\color{numb}7}}}{1}
+		      {8}{{{\color{numb}8}}}{1}
+		      {9}{{{\color{numb}9}}}{1}
+		      {.}{{{\color{javared}{.}}}}{1}
+		      {,}{{{\color{javared}{,}}}}{1}
+		      %{=}{{{\color{javared}{=}}}}{1}
+		}
+		
+		%==========================================================
+		%																		HTTP-HEADER
+		%==========================================================
+		\lstdefinelanguage{header}{
+		    backgroundcolor=\color{background},
+		    basicstyle=\tiny\ttfamily\color{javared},
+			numberstyle=\tiny\color{black},
+		    rulecolor=\color{black},
+		    morecomment=[l][\color{black}]{:},
+		    literate=
+		     *{0}{{{\color{numb}0}}}{1}
+		      {1}{{{\color{numb}1}}}{1}
+		      {2}{{{\color{numb}2}}}{1}
+		      {3}{{{\color{numb}3}}}{1}
+		      {4}{{{\color{numb}4}}}{1}
+		      {5}{{{\color{numb}5}}}{1}
+		      {6}{{{\color{numb}6}}}{1}
+		      {7}{{{\color{numb}7}}}{1}
+		      {8}{{{\color{numb}8}}}{1}
+		      {9}{{{\color{numb}9}}}{1}
+		      {.}{{{\color{javared}{.}}}}{1}
+		      {,}{{{\color{javared}{,}}}}{1}
+		      %{=}{{{\color{javared}{=}}}}{1}
+		}
+
+\renewcommand{\lstlistingname}{Beispiel} 
+\renewcommand{\lstlistlistingname}{Beispielverzeichnis}

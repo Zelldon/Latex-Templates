@@ -1,7 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
-\ProvidesPackage{documentpackage}[2013/03/18 UTIL Package]
-
-
+\ProvidesPackage{documentpackage}[2015/04/02 UTIL Package]
 
 %==============================================================================
 %																						RENEWED
@@ -13,75 +11,5 @@
 %==============================================================================
 
 \newcommand{\ib}[1]{\textbf{\textit{#1}}}
-\newcommand{\tpage}
-{
-	\begin{titlepage}
-		\scshape
-		\begin{center}
-			\begin{huge}
-				TITLE
-			\end{huge}
-			\\[2mm]
-			\hrule
-		
-		\begin{Large}	
-			\vspace*{5cm}
-			Sub-title
-			\\[10mm]
-		\end{Large}
-			an der
-			\\[5mm]
-			Institute
-			\\[5cm]
-			INFOS
-			\\
-			Email:	\hfill	 Email
-			\\[5mm]
-			Datum:\hfill\today
-	%	\end{Large}
-	
-		\end{center}	
-	\end{titlepage}
-}
 
-\newcommand{\dank}{
-			\cleardoublepage
-			\newpage
-			\setcounter{page}{0}       
-			\pagestyle{empty}    
-			 \begin{Huge}
-			 		\begin{center}
-			            \textsc{Danksagung} \\[-15mm]
-			            \rule[-5mm]{\widthof{\textsc{Danksagung}}+20pt}{0.4pt} 		
-			 		\end{center}
-			 \end{Huge}
-            
-			\vspace*{5cm}
-			\begin{center}
-				Dankesagung\\
-				\dots
-			\end{center}
-			\cleardoublepage
-			\newpage
-			\setcounter{page}{0}
-		}
-		
-
-\newcommand{\erklaerung}{
-			\cleardoublepage
-			\newpage
-			\setcounter{page}{0}
-			\pagestyle{empty}
-			\vspace*{5cm}
-			\begin{center}
-			
-				Hiermit versichere ich, dass ich die vorliegende Bachelorarbeit selbstst\"andig und nur unter
-				Verwendung der angegebenen Quellen und Hilfsmittel verfasst habe. Die Arbeit wurde bisher
-				in gleicher oder \"ahnlicher Form keiner anderen Pr\"ufungsbeh\"orde vorgelegt.
-			\end{center}
-			\vspace{3cm}
-			\rule{\widthof{\textbf{Ort, Datum}}}{1pt} \hfill \rule{\widthof{\textbf{Name}}}{1pt}
-			\\
-			\textbf{Ort, Datum} \hfill \textbf{Name}
-	}			
 			

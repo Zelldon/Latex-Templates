@@ -1,0 +1,25 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{acknowledgment}[2015/04/02 Package for the thesis acknowledgment]
+
+\newcommand{\acknowledgment}[1]{
+			\cleardoublepage
+			\newpage
+			\setcounter{page}{0}       
+			\pagestyle{empty}    
+			 \begin{Huge}
+			 		\begin{center}
+			            \textsc{Danksagung} \\[-15mm]
+			            \rule[-5mm]{\widthof{\textsc{Danksagung}}+20pt}{0.4pt} 		
+			 		\end{center}
+			 \end{Huge}
+            
+			\vspace*{5cm}
+			\begin{center}
+				#1
+			\end{center}
+			\cleardoublepage
+			\newpage
+			\setcounter{page}{0}
+		}
+		
+	

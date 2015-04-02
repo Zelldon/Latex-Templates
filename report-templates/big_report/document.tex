@@ -1,6 +1,10 @@
 \documentclass{documentclass}
 \RequirePackage{documentpackage}
 \usepackage{blindtext}
+\usepackage{orgistat}
+\usepackage{acknowledgment}
+\usepackage{ownlistings}
+
 %========================================================
 %====================GLOSSARIES============================
 %========================================================
@@ -169,11 +173,11 @@
 %========================================================
 %========================TITLEPAGE==========================
 %========================================================
-\tpage
+\input{Title/title.tex}
 %========================================================
 %========================DANKSAGUNG========================
 %========================================================
-\dank
+\acknowledgment{Ich danke \dots}
 \pagestyle{headings} % ermoeglicht das ausgeben von kapiteln als header
 \pagenumbering{roman}
 
@@ -233,5 +237,5 @@
 %========================================================
 %========================ERKLAERUNG========================
 %========================================================
-\erklaerung
+\orgistatement{Thesis}
 \end{document}
